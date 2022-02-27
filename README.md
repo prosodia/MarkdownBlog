@@ -10,7 +10,7 @@ A fast, simple markdown blog written in Node.js, feel free to take a copy and be
 
 - Clone the repo:
 ```
-$ git clone https://github.com/prosodia/blog.git
+$ git clone https://github.com/prosodia/markdownblog.git
 $ cd blog
 ```
 - Create package.json & install dependancies 
@@ -25,7 +25,7 @@ $ node app.js
 
 ## 📲 deploy to heroku:
 
-  <a href="https://heroku.com/deploy?template=https://github.com/prosodia/blog">
+  <a href="https://heroku.com/deploy?template=https://github.com/prosodia/markdownblog">
     <img src="https://img.shields.io/badge/deploy_to-heroku-997FBC.svg?style=for-the-badge&logo=Heroku">
   </a>
   
