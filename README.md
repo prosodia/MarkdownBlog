@@ -11,7 +11,7 @@ A fast, simple markdown blog written in Node.js, feel free to take a copy and be
 - Clone the repo:
 ```
 $ git clone https://github.com/prosodia/markdownblog.git
-$ cd blog
+$ cd markdownblog
 ```
 - Create package.json & install dependancies 
 ```
