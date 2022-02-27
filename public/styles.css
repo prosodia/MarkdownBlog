@@ -1,0 +1,61 @@
+/* Add your own CSS here */
+
+html, body {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0; margin: 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+hr {
+  list-style-type: none;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.image {
+  cursor: pointer;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: none;
+  cursor: pointer;
+  transition: 0.2s ease-out 0s;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.card-img:hover {
+  transform: scale(1.08) translateZ(0px);
+  cursor: pointer;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
