@@ -6,8 +6,6 @@ const createDomPurify = require('dompurify');
 const { JSDOM } = require('jsdom');
 const dompurify = createDomPurify(new JSDOM().window);
 
-/* image: { default: '' } DOES NOT WORK. */
-
 const blogSchema = new Schema({
     title: {
         type: String,
@@ -24,7 +22,6 @@ const blogSchema = new Schema({
     image: {
         type: String,
         required: false,
-        default: 'https://placehold.jp/1080x700.png' 
     },
     createdAt: {
         type: Date,
@@ -36,6 +33,10 @@ blogSchema.pre('validate', function(next) {
     if (this.body) {
         this.body = dompurify.sanitize(marked.parse(this.body))
     };
+    
+    if(!this.image) {
+        this.image = `https://placehold.jp/1080x700.png`
+    }
 
     next();
 });
