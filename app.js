@@ -6,8 +6,9 @@ const blogRoutes = require('./routes/blogRoutes');
 
 const app = express();
 
+const dbURI = config.mdb
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(result => app.listen(3000))
+    .then(result => console.log(`Connected to Database at ${new Date().toLocaleString('en-US')}`))
     .catch(err => console.log(err));
 
 app.set('view engine', 'ejs');
@@ -33,3 +34,10 @@ app.use('/blogs', blogRoutes);
 app.use((req, res) => {
     res.status(404).render('404', { title: '404' });
 });
+
+app.listen(3000, function(err){
+    if (err) console.log("Error on server setup.")
+    console.log("Server listening on port", this.address().port );
+})
+
+module.exports = app;
