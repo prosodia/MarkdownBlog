@@ -4,7 +4,7 @@
 
 A fast, simple markdown blog written in Node.js, feel free to take a copy and begin blogging!
 * The description only accepts markdown, everything else (*title & snippet*) do not support markdown.
-* As of now, the *image* "default placeholder" does not work. 
+* It should run on `localhost:3000` if set properly, add your mongodb link thing into `config.json`.
 
 ## 💻 install & run locally:
 
